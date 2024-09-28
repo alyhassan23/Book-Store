@@ -1,0 +1,483 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Universal and Body Section */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Header/Quote Section */
+
+.header {
+  background-color: palevioletred;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  padding: 5px;
+}
+
+/* Navbar Section */
+
+.nav {
+  background-color: #333;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 0 80px;
+}
+
+.nav-title {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon {
+  margin-right: 10px;
+}
+
+.nav label {
+  font-size: 30px;
+  padding: 5px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #fff;
+  padding-right: 8px;
+  font-size: 15px;
+}
+.nav-items a:hover {
+  color: red;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+.nav-buy {
+  background-color: palevioletred;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.nav-buy:hover {
+  background-color: #c04266;
+}
+/* Side Navbar Section(mobile) */
+.sideNav {
+  width: 250px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #333;
+  height: 100%;
+  color: white;
+  padding: 20px;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.sideNav.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.sideNav-item a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: white;
+}
+
+.sideNav-item a:hover {
+  color: red;
+}
+
+.closeMenuIcon {
+  cursor: pointer;
+}
+
+/* Main/Home Section */
+
+.mainContainer {
+  height: 87vh;
+
+  background-image: url(./Assets/pexels-readymade-3847658.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  background-size: cover;
+}
+.mainContent {
+  margin: auto;
+  text-align: center;
+  color: #fff;
+}
+.mainContent h1 {
+  font-size: 50px;
+}
+.mainContent h2 {
+  color: #333;
+  font-size: 1.5rem;
+}
+.mainContent p {
+  width: 50%;
+  margin: auto;
+}
+
+.mainContent h2 {
+  margin-bottom: 7px;
+}
+
+.mainContent button {
+  padding: 15px 60px;
+  border-radius: 5px;
+  border: none;
+  /* background-color: #333; */
+  background-color: transparent;
+
+  border: 3px solid #333;
+  color: #fff;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 1s;
+}
+.mainContent button:hover {
+  background-color: #333;
+}
+
+/* Services Section */
+
+.servicesCardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 50px 30px;
+  gap: 50px;
+  background-color: #f2f2f2;
+}
+.ServiceCard {
+  padding: 15px 20px;
+  border: #fff 4px solid;
+  width: 280px;
+}
+.ServiceCard ion-icon {
+  float: left;
+  margin-right: 6px;
+  font-size: 50px;
+}
+
+/* Welcome Section */
+
+.welcomeContainer {
+  background-image: url(https://demo.themagnifico.net/book-publisher/wp-content/themes/book-publisher-pro/assets/images/register/register_bg.jpg);
+  background-size: cover;
+  height: 80vh;
+  padding: 50px;
+}
+.welcomeContent {
+  text-align: center;
+  margin-bottom: 35px;
+  color: #fff;
+}
+
+.welcomeCardContainer {
+  background-color: #7d5d3b;
+  position: relative;
+  left: 55%;
+  top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  width: 600px;
+  padding: 20px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+/* Store/Products Section */
+
+.StoreContainer {
+  padding: 50px 100px;
+  text-align: center;
+}
+.StoreCardContainer {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
+}
+.StoreHeader {
+  margin-bottom: 40px;
+}
+
+.storeCard {
+  text-align: center;
+  color: #353535;
+}
+
+.storeCard img {
+  margin-bottom: 10px;
+}
+.storeCard h4 {
+  font-weight: 600;
+}
+
+.testimonials {
+  background-color: #f2f2f2;
+  padding-bottom: 20px;
+}
+.swiper {
+  width: 70%;
+  height: 100%;
+}
+.swiper-wrapper {
+  padding: 80px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6c6c6c;
+}
+
+.swiper-slide img {
+  float: left;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.swiper-slide h2 {
+  margin: 5px 0;
+}
+.swiper-slide h3 {
+  width: 70%;
+  font-weight: 600;
+}
+
+.swiper-slide p {
+  margin-bottom: 25px;
+  width: 60%;
+  text-align: justify;
+}
+
+/* Form Section */
+#AuthorForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  padding: 0 150px;
+  background-image: url("https://demo.themagnifico.net/book-publisher/wp-content/themes/book-publisher-pro/assets/images/author_bg.jpg");
+  background-size: cover;
+  object-fit: cover;
+}
+
+.formSec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.form {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+input,
+textarea {
+  width: calc(100% - 20px);
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+/* Button styling */
+.form-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-btn:hover {
+  background-color: #4f4f4f;
+}
+
+/* Footer Section */
+
+#footerSection {
+  background-color: #333;
+}
+
+.footer {
+  padding: 40px 80px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  color: #fff;
+}
+.footerContent p {
+  width: 200px;
+  text-align: justify;
+}
+.footerContent li {
+  text-decoration: none;
+  margin-bottom: 3px;
+  list-style: none;
+}
+.footerContent a:hover {
+  color: red;
+}
+.footerContent a {
+  text-decoration: none;
+  color: #fff;
+}
+.footerContent h1 {
+  margin-bottom: 10px;
+}
+.footerBuynow {
+  background-color: #c04266;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.footerBuynow:hover {
+  background-color: palevioletred;
+}
+
+/* CopyRight Section */
+.copyright {
+  color: #fff;
+  background-color: #333;
+  text-align: center;
+  padding: 5px;
+  border-top: #fff 1px solid;
+  width: 80%;
+  position: relative;
+  left: 10%;
+  font-size: 14px;
+}
+.Developer {
+  color: palevioletred;
+}
+
+/* Media Query/Mobile Styling  Section*/
+
+@media (max-width: 900px) {
+  /*Mobile Navbar Secion */
+  .menu-icon {
+    display: block;
+  }
+  .nav-items {
+    display: none;
+  }
+  .nav label {
+    font-size: 20px;
+  }
+
+  /* Mobile services Section */
+
+  .servicesCardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 50px auto;
+  }
+  .ServiceCard {
+    width: 55vw;
+    padding: 10px 20px;
+    border: #fff 4px solid;
+  }
+
+  /* Mobile welcome Section */
+  .welcomeContainer {
+    height: 950px;
+  }
+
+  .welcomeCardContainer {
+    display: block;
+    position: static;
+    width: 70vw;
+  }
+  .welcomeCard {
+    margin-bottom: 15px;
+  }
+
+  /* Mobile Store Section */
+  .StoreCardContainer {
+    flex-direction: column;
+  }
+
+  /* Testimonials Section */
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Mobile form Section */
+  #AuthorForm {
+    padding: 0 20px;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  /* mobile Footer Section */
+
+  .footer {
+    flex-direction: column;
+    margin: auto;
+  }
+  .footerContent {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .footerContent p {
+    text-align: justify;
+    width: 100%;
+  }
+}
